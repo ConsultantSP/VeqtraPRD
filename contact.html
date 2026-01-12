@@ -4,33 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us — Veqtra Solutions</title>
-
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
   <style>
-    body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1e293b; }
-    h1, h3 { font-family: 'Playfair Display', serif; }
-    .nav-link { transition: color 0.3s ease; color: #475569; }
-    .nav-link:hover { color: #2563eb; opacity: 0.8; }
-    .contact-btn { background-color: #2563eb; color: #fff !important; padding: 0.55rem 1.5rem; border-radius: 9999px; font-weight: 600; }
-    .contact-btn:hover { background-color: #1d4ed8; }
-
-    /* Success/Error message */
-    #formStatus { display: none; margin-top: 1.5rem; padding: 1rem; border-radius: 0.75rem; text-align: center; font-weight: 600; }
-    .success-bg { background-color: #eff6ff; border: 1px solid #2563eb; color: #1d4ed8; }
-    .error-bg { background-color: #fef2f2; border: 1px solid #ef4444; color: #b91c1c; }
+    body { font-family:'Inter',sans-serif; color:#1e293b; background:#f8fafc; }
+    h1,h2,h3 { font-family:'Playfair Display', serif; }
+    .nav-link { transition:.3s; color:#475569; }
+    .nav-link:hover { color:#2563eb; opacity:.8; }
+    .contact-btn { background:#2563eb; color:#fff !important; padding:.55rem 1.5rem; border-radius:9999px; font-weight:600; }
+    .contact-btn:hover { background:#1d4ed8; }
+    .hero-gradient { background: linear-gradient(135deg,#f8fafc 0%,#eef2ff 40%,#dbeafe 100%); }
+    .card { transition:.35s ease; backdrop-filter:blur(12px); }
+    .card:hover { transform:translateY(-6px); box-shadow:0 18px 30px -10px rgba(30,58,138,.15); }
+    #formStatus { display:none; margin-top:1rem; padding:1rem; border-radius:.75rem; text-align:center; font-weight:600; }
+    .success-bg { background-color:#eff6ff; border:1px solid #2563eb; color:#1d4ed8; }
+    .error-bg { background-color:#fef2f2; border:1px solid #ef4444; color:#b91c1c; }
   </style>
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-6 py-4 flex justify-between items-center">
-      <div class="text-2xl font-bold tracking-tight text-slate-900">
-        Veqtra <span class="text-blue-600">SOLUTIONS</span>
-      </div>
-      <div class="hidden md:flex space-x-6 lg:space-x-10 text-sm font-semibold tracking-wide">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="text-2xl font-bold tracking-tight text-slate-900">Veqtra <span class="text-blue-600">SOLUTIONS</span></div>
+      <div class="hidden md:flex space-x-10 text-sm font-semibold tracking-wide">
         <a href="index.html" class="nav-link">HOME</a>
         <a href="about.html" class="nav-link">ABOUT</a>
         <a href="services.html" class="nav-link">SERVICES</a>
@@ -40,48 +37,54 @@
   </nav>
 
   <!-- HERO -->
-  <header class="py-16 sm:py-24 md:py-28 px-4 sm:px-6 md:px-6 text-center border-b border-slate-100">
-    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 md:mb-8 text-slate-900">Let’s Start a Conversation</h1>
-    <p class="text-base sm:text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-      Discreet, professional, and outcome-focused consultations.
+  <header class="hero-gradient py-28 px-6 text-center border-b border-slate-100">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6 text-slate-900">Let’s Start a Conversation</h1>
+    <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
+      Discreet, professional, and outcome-focused consultations tailored for your business.
     </p>
   </header>
 
-  <!-- FORM -->
-  <main class="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-6 max-w-3xl mx-auto">
-
-    <form id="contactForm" action="https://formspree.io/f/xkoowall" method="POST" class="space-y-6 bg-white p-6 sm:p-8 md:p-10 rounded-3xl border border-slate-100 shadow-xl shadow-slate-100">
-
+  <!-- CONTACT FORM -->
+  <main class="py-24 px-6 max-w-3xl mx-auto">
+    <form id="contactForm" action="https://formspree.io/f/xkoowall" method="POST" class="card bg-white/80 p-10 rounded-3xl border border-slate-100 shadow-xl space-y-6">
       <div>
         <label class="block text-sm font-medium mb-2 text-slate-700">Name</label>
-        <input type="text" name="name" required class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900">
+        <input type="text" name="name" required class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900" />
       </div>
-
       <div>
         <label class="block text-sm font-medium mb-2 text-slate-700">Email</label>
-        <input type="email" name="email" required class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900">
+        <input type="email" name="email" required class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900" />
       </div>
-
       <div>
         <label class="block text-sm font-medium mb-2 text-slate-700">Message</label>
         <textarea name="message" rows="5" required class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900"></textarea>
       </div>
-
-      <button type="submit" id="submitBtn" class="w-full bg-blue-600 text-white py-3 sm:py-4 md:py-4 rounded-xl font-bold text-base sm:text-lg hover:bg-blue-700 shadow-lg shadow-blue-200 transition">Send Inquiry</button>
-
+      <button type="submit" id="submitBtn" class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-700 shadow-lg transition">
+        Send Inquiry
+      </button>
       <div id="formStatus" aria-live="polite"></div>
-
     </form>
 
+    <!-- WhatsApp link -->
+    <div class="text-center mt-6">
+      <a href="https://wa.me/351962797632" class="text-emerald-600 font-semibold hover:underline">Or reach us on WhatsApp &rarr;</a>
+    </div>
+
+    <!-- Global Reach -->
+    <div class="mt-20 text-center">
+      <h3 class="text-xs uppercase tracking-widest text-slate-400 mb-4">Our Global Reach</h3>
+      <p class="text-2xl font-bold tracking-tight text-slate-800">USA | India | Europe | UK</p>
+    </div>
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-slate-50 text-slate-500 py-10 sm:py-12 md:py-14 px-4 sm:px-6 md:px-6 text-center border-t border-slate-100">
+  <footer class="bg-slate-50 text-slate-500 py-12 px-6 text-center border-t border-slate-100">
     <div class="text-2xl font-bold text-slate-900 mb-1 tracking-tight">Veqtra SOLUTIONS</div>
-    <p class="text-xs mb-4 sm:mb-6 uppercase tracking-widest">Trusted • Strategic • Global</p>
+    <p class="text-xs mb-6 uppercase tracking-widest">Trusted • Strategic • Global</p>
     <p class="text-[10px] opacity-60">© 2026 Veqtra Solutions. All rights reserved.</p>
   </footer>
 
+  <!-- FORMSPREE SCRIPT -->
   <script>
     const form = document.getElementById("contactForm");
     const status = document.getElementById("formStatus");
@@ -90,7 +93,8 @@
     form.addEventListener("submit", async function(event) {
       event.preventDefault();
       const data = new FormData(event.target);
-      btn.disabled = true; btn.innerText = "Sending...";
+      btn.disabled = true;
+      btn.innerText = "Sending...";
       status.style.display = "none";
 
       try {
@@ -101,23 +105,31 @@
         });
 
         if (response.ok) {
-          status.innerHTML = "Thanks! We received your message and will be in touch soon.";
-          status.className = "success-bg"; status.style.display = "block";
-          form.reset(); btn.style.display = "none";
+          status.innerText = "Thanks! Your message has been sent. We'll get in touch soon.";
+          status.className = "success-bg";
+          status.style.display = "block";
+          form.reset();
+          btn.style.display = "none";
         } else {
           const result = await response.json();
-          status.innerHTML = result.errors ? result.errors.map(e => e.message).join(", ") : "Oops! There was a problem.";
-          status.className = "error-bg"; status.style.display = "block";
-          btn.disabled = false; btn.innerText = "Send Inquiry";
+          status.innerText = result.errors ? result.errors.map(e => e.message).join(", ") : "Oops! There was a problem.";
+          status.className = "error-bg";
+          status.style.display = "block";
+          btn.disabled = false;
+          btn.innerText = "Send Inquiry";
         }
       } catch (error) {
-        status.innerHTML = "Oops! Connection failed. Please try again.";
-        status.className = "error-bg"; status.style.display = "block";
-        btn.disabled = false; btn.innerText = "Send Inquiry";
+        status.innerText = "Oops! Connection failed. Please try again.";
+        status.className = "error-bg";
+        status.style.display = "block";
+        btn.disabled = false;
+        btn.innerText = "Send Inquiry";
       }
     });
   </script>
 
 </body>
 </html>
+
+
 
