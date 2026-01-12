@@ -1,150 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us — Veqtra Solutions</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Veqtra Solutions</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #ffffff;
-        }
-        h1, h2, h3, h4 {
-            font-family: 'Playfair Display', serif;
-        }
-        .premium-gradient {
-            background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 40%, #dbeafe 100%);
-        }
-        .nav-link {
-            transition: .3s;
-            color: #475569;
-        }
-        .nav-link:hover {
-            color: #2563eb;
-            opacity: 0.8;
-        }
-        .card {
-            transition: .35s ease;
-            backdrop-filter: blur(10px);
-        }
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 35px -10px rgba(30, 58, 138, 0.15);
-        }
-    </style>
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    .nav-link { transition: color 0.3s ease; color: #475569; }
+    .nav-link:hover { color: #2563eb; opacity: 0.8; }
+    .contact-btn { background-color: #2563eb; color: #fff !important; padding: 0.55rem 1.5rem; border-radius: 9999px; font-weight: 600; }
+    .contact-btn:hover { background-color: #1d4ed8; }
+    .card { transition: .35s ease; backdrop-filter: blur(12px); }
+    .card:hover { transform: translateY(-8px); box-shadow: 0 20px 35px -10px rgba(30,58,138,0.15); }
+  </style>
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
-    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="text-2xl font-bold tracking-tight text-slate-900">
-                Veqtra <span class="text-blue-600">SOLUTIONS</span>
-            </div>
-            <div class="hidden md:flex space-x-10 text-sm font-semibold tracking-wide">
-                <a href="index.html" class="nav-link">HOME</a>
-                <a href="about.html" class="text-blue-600">ABOUT</a>
-                <a href="services.html" class="nav-link">SERVICES</a>
-                <a href="contact.html" class="nav-link">CONTACT</a>
-            </div>
-        </div>
-    </nav>
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold tracking-tight text-slate-900">
+        Veqtra <span class="text-blue-600">SOLUTIONS</span>
+      </div>
+      <div class="hidden md:flex space-x-6 lg:space-x-10 text-sm font-semibold tracking-wide">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="about.html" class="text-blue-600">ABOUT</a>
+        <a href="services.html" class="nav-link">SERVICES</a>
+        <a href="contact.html" class="contact-btn shadow-sm">CONTACT</a>
+      </div>
+    </div>
+  </nav>
 
-    <!-- HERO -->
-    <header class="premium-gradient py-28 px-6 border-b border-slate-100">
-        <div class="max-w-5xl mx-auto text-center">
-            <h1 class="text-5xl md:text-6xl font-bold text-slate-900 mb-6">About Veqtra Solutions</h1>
-            <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
-                A global consulting and technology firm empowering businesses to scale with confidence, clarity, and cross-border expertise.
-            </p>
-        </div>
-    </header>
+  <!-- HERO -->
+  <header class="py-16 sm:py-24 md:py-28 px-4 sm:px-6 md:px-6 text-center">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 md:mb-8 text-slate-900">About Us</h1>
+    <p class="text-base sm:text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+      Veqtra Solutions is a global consulting and technology firm offering senior-led advisory and delivery across multiple jurisdictions. We work with founders, investors, and corporate leaders to provide discreet, practical, and outcome-focused support.
+    </p>
+  </header>
 
-    <!-- MAIN CONTENT -->
-    <main class="py-24 px-6 max-w-5xl mx-auto">
+  <!-- Core Principles -->
+  <main class="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-6 max-w-5xl mx-auto space-y-10">
 
-        <!-- WHO WE ARE -->
-        <section class="mb-20">
-            <h2 class="text-4xl font-bold text-slate-900 mb-6">Who We Are</h2>
-            <p class="text-lg text-slate-600 leading-relaxed">
-                Veqtra Solutions is a senior-led advisory brand delivering discreet, strategic, and outcome-focused services.
-                Our team blends expertise across consulting, outsourcing, and technology — enabling founders, investors, 
-                and corporate leaders to navigate global markets with precision.
-            </p>
-        </section>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+      <div class="card bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+        <h3 class="text-xl md:text-2xl font-bold text-blue-600 mb-2">Trust & Confidentiality</h3>
+        <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+          Treating engagements with the highest discretion and professional standards.
+        </p>
+      </div>
+      <div class="card bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+        <h3 class="text-xl md:text-2xl font-bold text-blue-600 mb-2">Cross-border Expertise</h3>
+        <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+          Deep experience in international markets and regulatory frameworks.
+        </p>
+      </div>
+    </div>
 
-        <!-- CORE PRINCIPLES -->
-        <section class="mb-20">
-            <h2 class="text-4xl font-bold text-slate-900 mb-10">Our Core Principles</h2>
+    <!-- CTA -->
+    <div class="text-center mt-12 sm:mt-16 md:mt-20">
+      <a href="services.html" class="inline-block bg-blue-600 text-white px-6 sm:px-8 md:px-12 py-3 sm:py-4 md:py-5 rounded-xl font-bold text-base sm:text-lg md:text-lg hover:bg-blue-700 transition shadow-lg shadow-blue-200">
+        View Our Services
+      </a>
+    </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="card bg-white/70 p-8 rounded-3xl border border-slate-100 shadow-sm">
-                    <h4 class="text-xl font-bold text-blue-600 mb-3">Trust & Confidentiality</h4>
-                    <p class="text-slate-600 leading-relaxed">
-                        Our clients trust us with high-impact decisions. We uphold full confidentiality and professional ethics 
-                        in every engagement.
-                    </p>
-                </div>
+  </main>
 
-                <div class="card bg-white/70 p-8 rounded-3xl border border-slate-100 shadow-sm">
-                    <h4 class="text-xl font-bold text-blue-600 mb-3">Cross-Border Expertise</h4>
-                    <p class="text-slate-600 leading-relaxed">
-                        With global experience, we help businesses navigate international regulations, markets, 
-                        and expansion opportunities.
-                    </p>
-                </div>
-
-                <div class="card bg-white/70 p-8 rounded-3xl border border-slate-100 shadow-sm">
-                    <h4 class="text-xl font-bold text-blue-600 mb-3">Strategic Precision</h4>
-                    <p class="text-slate-600 leading-relaxed">
-                        Every recommendation is backed by analytical rigor, market intelligence, and execution-driven strategy.
-                    </p>
-                </div>
-
-                <div class="card bg-white/70 p-8 rounded-3xl border border-slate-100 shadow-sm">
-                    <h4 class="text-xl font-bold text-blue-600 mb-3">Long-Term Partnership</h4>
-                    <p class="text-slate-600 leading-relaxed">
-                        We grow with our clients — offering continuous support, advisory, and operational capabilities.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- VISION -->
-        <section class="mb-24">
-            <h2 class="text-4xl font-bold text-slate-900 mb-8">Our Vision</h2>
-            <p class="text-lg text-slate-600 leading-relaxed">
-                We envision a world where businesses, regardless of geography, can access elite advisory and world-class 
-                technology solutions to accelerate global growth.  
-                Veqtra Solutions strives to be the bridge between ambition and successful execution.
-            </p>
-        </section>
-
-        <!-- CTA SECTION -->
-        <div class="bg-slate-900 text-white p-14 rounded-3xl text-center shadow-xl">
-            <h3 class="text-3xl mb-4">Ready to move forward?</h3>
-            <p class="text-slate-300 mb-8">Let’s build your global strategy with precision and clarity.</p>
-
-            <a href="services.html"
-                class="inline-block bg-blue-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-blue-500 transition">
-                Explore Our Services
-            </a>
-        </div>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="bg-slate-50 text-slate-500 py-14 px-6 text-center border-t border-slate-100">
-        <div class="text-2xl font-bold text-slate-900 mb-1 tracking-tight">Veqtra SOLUTIONS</div>
-        <p class="text-xs mb-6 uppercase tracking-widest">Trusted • Strategic • Global</p>
-        <p class="text-[10px] opacity-60">© 2026 Veqtra Solutions. All rights reserved.</p>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="bg-slate-50 text-slate-500 py-10 sm:py-12 md:py-14 px-4 sm:px-6 md:px-6 text-center border-t border-slate-100">
+    <div class="text-2xl font-bold text-slate-900 mb-1 tracking-tight">Veqtra SOLUTIONS</div>
+    <p class="text-xs mb-4 sm:mb-6 uppercase tracking-widest">Trusted • Strategic • Global</p>
+    <p class="text-[10px] opacity-60">© 2026 Veqtra Solutions. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
+
